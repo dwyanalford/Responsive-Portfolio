@@ -1,0 +1,237 @@
+body {
+	width: auto;
+	height: auto;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	margin: 0 auto;
+	background-image: url("../images/symphony.png");
+	/*background-color: lightgrey;*/
+}
+h1, h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+}
+h1 {
+	font-size: 24px;
+}
+#main-bar {
+	height: 96px;
+	position: relative;
+	border-bottom: 2px solid #e8e8e8;
+	background-color: #fff;
+}
+header {
+	float: left;
+	background-color: #4aaaa5;
+	height: 85px;
+	width: 250px;
+	position: absolute;
+	bottom: 0px;
+    left: 100px;
+    margin-top: 100px;
+}
+header h2 {
+ 	color: white;
+ 	font-weight: bold;
+	font-size: 28px;
+	text-align: center;
+	padding-top: 25px;
+}
+nav {
+	float: right;
+	width: 300px;
+	height: 50px;
+	margin-top: 40px;
+}
+nav a {
+	text-decoration: none;
+	padding-left: 15px;
+	color: grey; 
+}
+#content-background {
+	width: 960px;
+	min-height: 500px;
+	/*background-color: lightgrey;
+	position: relative;*/
+}
+section, aside {
+	background-color: #ffffff;
+}
+section {
+    width: 500px;
+    min-height: 300px;
+    float: left;
+    margin-left: 67px;
+    margin-top: 36px;
+    padding: 30px;
+    border: 1px solid #e8e8e8;
+    /*position: relative;*/
+}
+section h1, aside h2 {
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #e8e8e8;
+}
+section img {
+	float: left;
+	border: 2px solid #4aaaa5;
+}
+/*This p-style id changes paragraph 1 ONLY of About Me Section*/
+#p-style {
+    width: 230px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+    border-bottom: 1px #e8e8e8 solid;
+    padding-bottom: 10px;
+    line-height: 17px;
+}
+section p:last-child {
+  	width: 500px;
+  	margin-left: 0px;
+  	margin-top: 20px;
+  	float: left;
+}
+.folio1 {
+	background-color: #4aaaa5;
+	width: 200px;
+	height: 173px;
+	float: left;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	margin-top: 25px;
+	text-align: center;
+	color: white;
+}
+aside {
+	width: 220px;
+	height: auto;
+	float: left;
+	margin-left: 37px;
+	background-color: white;
+	margin-top: 36px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #e8e8e8;
+}
+footer {
+	clear: both;
+	background-color: #666666;
+	height: 92px;
+	border-top: 5px solid #4aaaa5;
+	color: #fff;
+	text-align: center;
+}
+footer p {
+	margin-top: 40px;
+	font-size: 14px;
+}
+/*-------------------------  MEDIA QUERIES  --------------------------- */
+
+/*-----------------------------------   MOBILE LAYOUT START HERE  ------*/
+
+@media only screen and (max-width: 640px) {
+
+body {
+	width: 100%;
+	height: auto;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	margin: 0 auto;
+	background-image: url("../images/symphony.png");
+}
+#main-bar {
+	height: auto;
+	position: static;
+	border-bottom: 2px solid #e8e8e8;
+	background-color: #fff;
+	max-width: 400px;
+}
+header {
+	float: none;
+	background-color: #4aaaa5;
+	height: auto;
+	width: 100%;
+	position: static;
+    margin-top: 0px;
+}
+header h2 {
+ 	color: white;
+ 	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px 0px;
+}
+nav {
+	float: none;
+	width: auto;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+nav a {
+	text-decoration: none;
+	padding-left: 57px;
+	color: grey; 
+}
+section {
+    width: 260px;
+    min-height: 0px;
+    float: none;
+    margin-left: 40px;
+    margin-top: 15px;
+    padding: 30px;
+    border: 1px solid #e8e8e8;
+}
+section img {
+	float: none;
+	border: 2px solid #4aaaa5;
+}
+.folio1 {
+	background-color: #4aaaa5;
+	width: 200px;
+	height: 173px;
+	float: none;
+	margin: 20px;
+	text-align: center;
+	color: white;
+}
+#p-style {
+    width: 275px;
+    float: none;
+    margin-left: 0px;
+    margin-top: 10px;
+    border-bottom: 0px #e8e8e8 solid;
+    padding-bottom: 10px;
+    line-height: 16px;
+}
+section p:last-child {
+  	width: 275px;
+  	margin-left: 0px;
+  	margin-top: 0px;
+  	float: none;
+}
+aside {
+	width: 280px;
+	height: auto;
+	float: none;
+	margin-left: 40px;
+	background-color: white;
+	margin-top: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    border: 1px solid #e8e8e8;
+}
+footer {
+	clear: both;
+	background-color: #666666;
+	height: 92px;
+	border-top: 5px solid #4aaaa5;
+	color: #fff;
+	text-align: left;
+	padding-left: 110px;
+}
+
+}
